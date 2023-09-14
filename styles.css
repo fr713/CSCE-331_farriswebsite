@@ -30,7 +30,18 @@ p {
     text-align: center;
     margin: 20px auto; 
 }
-
+.prominent {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 60px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    margin: 0 auto; 
+    max-width: 500px; 
+}
 
 
 .landing-box {
@@ -89,8 +100,11 @@ a:hover {
 }
 
 .social-icons .social {
-    color: black; 
+    color: black !important; /* Change the icon color to black */
+    background-color: transparent !important; /* Remove the gray background */
 }
+
+
  .social-icons {
     font-size: 36px;
     cursor: pointer;
@@ -104,4 +118,50 @@ a:hover {
 .fa-github:hover
 {
     color: black;
+}
+
+.navbar {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #ff6600; 
+}
+
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
 }
