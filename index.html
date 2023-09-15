@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" id="theme-style" href="default.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <title>Landing Page</title>
   </head>
@@ -20,12 +20,19 @@
       </nav>
       <div class="landing-container">
         <div class="landing-box prominent">
-            <img src="images/farris_pfp.jpg" alt="Your Name" class="profile-image">
+            <img src="family.jpeg" alt="Your Name" class="profile-image">
             <h1>Farris Rizwan</h1>
             <p>Student at Texas A&M University</p>
             <p>Major: Computer Science</p>
             <p>Year: Junior</p>
-            <a href="#">Learn More</a>
+            <div class="social-icons mt-4">
+                <h2>TAMU website: </h2>
+                <p> <a href="https://www.tamu.edu/index.html" target="_blank"><i class="fab fa-safari social"></i></a></p>
+            </div>
+            <div class="social-icons mt-4">
+                <h2>TAMU Computer Science Degree Plan: </h2>
+                <p> <a href="https://catalog.tamu.edu/undergraduate/engineering/computer-science/bs/" target="_blank"><i class="fab fa-safari social"></i></a></p>
+            </div>
         </div>
     </div>
       <div class="landing-container">
@@ -42,6 +49,9 @@
                  This position gave me the invaluable skill of fostering calm and diplomatic communication with others. My experiences have molded me into a versatile candidate in the job market. I possess technical skills, leadership skills, and communication skills. 
                  Outside work and school, I enjoy working out, playing basketball and football, cooking, and spending time with family and friends. This website is a portfolio. It highlights my projects, skills, and experiences.
             </p>
+            <div class="social-icons mt-4">
+                <p>Spotify: <a href="https://open.spotify.com/user/farrisrizwan?si=48159ddadbc64fb1" target="_blank"><i class="fab fa-spotify social"></i></a></p>
+            </div>
           </div>
       </div>
       <div class="landing-container">
@@ -52,7 +62,16 @@
             <div class="social-icons mt-4">
                 <p>LinkedIn: <a href="https://www.linkedin.com/in/farris-rizwan" target="_blank"><i class="fab fa-linkedin social"></i></a></p>
             </div>
+            <div class="social-icons mt-4">
+                <p>Gmail: <a href="https://gmail.com" target="_blank"><i class="fab fa-google"></i></a></p>
+            </div>
         </div>
     </div>
-  </body>
+    <body>
+        <h1>Switch CSS Stylesheets</h1>
+        <button id="theme-toggle">Toggle Theme</button>
+    
+        <script src="toggle.js"></script>
+    </body>
+  
 </html>

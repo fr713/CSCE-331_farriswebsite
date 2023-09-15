@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-      <title>Landing Page</title>
-  </head>
-  
-  <body>
-      <nav class="navbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Landing Page</title>
+    <style>
+        /* Style the fun fact container */
+    .fun-fact-container {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .fun-fact {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: white; 
+    }
+
+    #generate-fun-fact {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">Landing Page</a></li>
             <li><a href="technical_portfolio.html">Technical Portfolio</a></li>
@@ -17,5 +40,33 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="ai_generated_page.html">AI Generated Page</a></li>
         </ul>
-      </nav>
-  </body>
+    </nav>
+
+    <!-- Fun Facts Section -->
+    <section class="fun-fact-container">
+        <h1>Fun Facts Generator</h1>
+        <div class="fun-fact" id="fun-fact-text">Click the button to generate a fun fact!</div>
+        <button id="generate-fun-fact">Generate Fun Fact</button>
+    </section>
+
+    <script>
+        // Function to generate a random fun fact
+function generateFunFact() {
+    const funFacts = [
+        "Did you know that honey never spoils?",
+        "The Eiffel Tower can be 15 cm taller during the summer due to thermal expansion.",
+        "A group of flamingos is called a 'flamboyance.'",
+        "Bananas are berries, but strawberries are not.",
+        "Octopuses have three hearts."
+    ];
+
+    const randomIndex = Math.floor(Math.random() * funFacts.length);
+    const funFactText = funFacts[randomIndex];
+    document.getElementById("fun-fact-text").textContent = funFactText;
+}
+
+    // Event listener for the "Generate Fun Fact" button
+    document.getElementById("generate-fun-fact").addEventListener("click", generateFunFact);
+    </script>
+</body>
+</html>

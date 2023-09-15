@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-      <title>Landing Page</title>
-  </head>
-  
-  <body>
-      <nav class="navbar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id="theme-style" href="default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <nav class="navbar">
         <ul>
             <li><a href="index.html">Landing Page</a></li>
             <li><a href="technical_portfolio.html">Technical Portfolio</a></li>
@@ -17,11 +16,71 @@
             <li><a href="services.html">Services</a></li>
             <li><a href="ai_generated_page.html">AI Generated Page</a></li>
         </ul>
-      </nav>
-      <object data="Farris_Rizwan_Resume-5-4.pdf" type="application/pdf" width="100%" height="500px">
-        <p>It appears you don't have a PDF plugin for this browser.
-           No biggie... you can <a href="Farris_Rizwan_Resume-5-4.pdf">click here to download the PDF file.</a>
-        </p>
-      </object>
-      
-  </body>
+    </nav>
+    
+    <section>
+      <div>
+          <!-- Resume Box -->
+          <div>
+              <h1>My Resume</h1>
+              <div class="pdf-container">
+                  <object data="Farris_Rizwan_Resume-5-4.pdf" type="application/pdf" width="400" height="300">
+                      <p>It appears you don't have a PDF plugin for this browser.
+                          No biggie... you can <a href="Farris_Rizwan_Resume-5-4.pdf">click here to download the PDF file.</a>
+                      </p>
+                  </object>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    
+    <section>
+        <div class="landing-container">
+            <!-- Third Box -->
+            <div class="landing-box">
+                <h2>Skills</h2>
+                <p> Programming Languages:  </p>
+                <ul class="skill-list">
+                    <li>C++ - Advanced</li>
+                    <li>Python - Advanced</li>
+                    <li>Java - Intermediate</li>
+                    <li>C# - Intermediate</li>
+                </ul>
+                <p> Front-End Development:  </p>
+                <ul class="skill-list">
+                    <li>HTML5/CSS3 - Intermediate</li>
+                    <li>JavaScript - Beginner</li>
+                    <li>React - Beginner</li>
+                </ul>
+                <p> Software Tools and Frameworks  </p>
+                <ul class="skill-list">
+                    <li>Beautiful Soup</li>
+                    <li>Selenium</li>
+                    <li>Pandas</li>
+                    <li>Flask</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div class="landing-container">
+          <!-- Third Box -->
+          <div class="landing-box">
+            <h2>Technical Areas of Interest</h2>
+            <p> In the realm of Computer Science, I'm particularly drawn to Data Science and Backend Development. These areas fascinate me because they offer the opportunity to work with data and build the hidden infrastructure that powers applications. It's the thrill of discovering meaningful patterns in data and the satisfaction of building the robust foundation that ensures applications run smoothly that drive my passion for these technical fields </p>
+            <div class="social-icons mt-4">
+                <h2>Article about rise of Data Science: </h2>
+                <p> <a href="https://www.linkedin.com/pulse/rise-data-science-needs-create-roughly-115-billion-job-tushar-kaushik/#:~:text=According%20to%20the%20US%20Bureau,to%20the%20World%20Economic%20Forum." target="_blank"><i class="fab fa-safari social"></i></a></p>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+
+    <h1>Switch CSS Stylesheets</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+    <script src="toggle.js"></script>
+</body>
+</html>

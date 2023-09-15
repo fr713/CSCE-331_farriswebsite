@@ -3,7 +3,7 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" id="theme-style" href="default.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <title>Landing Page</title>
   </head>
@@ -18,37 +18,45 @@
             <li><a href="ai_generated_page.html">AI Generated Page</a></li>
         </ul>
       </nav>
-      <div class="landing-container">
-        <!-- First Box -->
-        <div class="landing-box">
-            <h2>NBA-FACEOFF</h2>
-            <p>This is code for an app where one can type in the names of two NBA players and the program will return the better player of the two along with their scores.</p>
-            <div class="social-icons mt-4">
-                <p>Link: <a href="https://github.com/fr713/NBAFaceOff" target="_blank"><i class="fab fa-github social"></i></a></p>
-            </div>
+      <section>
+        <div class="landing-container">
+          <!-- First Box -->
+          <div class="landing-box">
+              <h2>NBA-FACEOFF</h2>
+              <p>This is code for an app where one can type in the names of two NBA players and the program will return the better player of the two along with their scores.</p>
+              <div class="social-icons mt-4">
+                  <p>Link: <a href="https://github.com/fr713/NBAFaceOff" target="_blank"><i class="fab fa-github social"></i></a></p>
+              </div>
+          </div>
         </div>
-      </div>
-      
-      <div class="landing-container">
-        <!-- Second Box -->
-        <div class="landing-box">
-            <h2>CSCE 313 Project 1</h2>
-            <p>Link to code for this very website.</p>
-            <div class="social-icons mt-4">
-                <p>Link to code: <a href="https://github.com/fr713/CSCE-331_farriswebsite" target="_blank"><i class="fab fa-github social"></i></a></p>
-            </div>
+      </section>
+      <section>
+        <div class="landing-container">
+          <!-- Second Box -->
+          <div class="landing-box">
+              <h2>CSCE 313 Project 1</h2>
+              <p>Link to code for this very website.</p>
+              <div class="social-icons mt-4">
+                  <p>Link to code: <a href="https://github.com/fr713/CSCE-331_farriswebsite" target="_blank"><i class="fab fa-github social"></i></a></p>
+              </div>
+          </div>
         </div>
-      </div>
-      
-      <div class="landing-container">
-        <!-- Third Box -->
-        <div class="landing-box">
-            <h2>Personal Website</h2>
-            <p>Code for a personal website I made in the summer that briefly highlights my skills, projects, and basically tells people who I really am.</p>
-            <div class="social-icons mt-4">
-                <p>Link: <a href="https://github.com/fr713/NBA_Comparator" class="btn btn-success">Click Here!</a></p>
-            </div>
+      </section>
+      <section>
+        <div class="landing-container">
+          <!-- Third Box -->
+          <div class="landing-box">
+              <h2>Personal Website</h2>
+              <p>Code for a personal website I made in the summer that briefly highlights my skills, projects, and basically tells people who I really am.</p>
+              <div class="social-icons mt-4">
+                  <p>Link: <a href="https://github.com/fr713/NBA_Comparator" class="btn btn-success">Click Here!</a></p>
+              </div>
+          </div>
         </div>
-      </div>
+    </section>
+    
+    <h1>Switch CSS Stylesheets</h1>
+    <button id="theme-toggle">Toggle Theme</button>
+    <script src="toggle.js"></script>
   </body>
 </html>
